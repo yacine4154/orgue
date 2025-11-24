@@ -1,0 +1,5 @@
+{
+  "name": "Virtuoso AZERTY Synth",
+  "description": "Un synthétiseur virtuel évolué pour claviers AZERTY avec mode accords et multi-instruments, enrichi par l'IA Gemini.",
+  "requestFramePermissions": []
+}

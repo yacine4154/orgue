@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuoso AZERTY Piano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              piano: {
+                black: '#1a1a1a',
+                dark: '#2d2d2d',
+                gold: '#d4af37',
+                accent: '#3b82f6',
+              }
+            },
+            boxShadow: {
+              'key-white': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), inset 0 -5px 10px rgba(0,0,0,0.1)',
+              'key-white-active': 'inset 0 2px 4px rgba(0,0,0,0.3)',
+              'key-black': '0 4px 6px -1px rgba(0, 0, 0, 0.5), inset 0 -2px 5px rgba(255,255,255,0.1)',
+              'key-black-active': 'inset 0 2px 4px rgba(0,0,0,0.8)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #121212;
+        color: #e5e5e5;
+        overflow: hidden; /* Prevent scrolling on mobile when playing */
+      }
+      /* Disable text selection for better playability */
+      .no-select {
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@heroicons/react/": "https://aistudiocdn.com/@heroicons/react@^2.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
